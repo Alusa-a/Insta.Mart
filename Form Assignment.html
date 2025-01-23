@@ -16,17 +16,74 @@
 
 #Maindiv{
   display: flex;
+    padding: 90px;
+    margin-right: 2%;
+    margin-left: 2%;
+
+
+
 
 
 
 }
 
 
+#formdiv{
+
+    background-color: white;
+    width: 25%;
+    padding: 40px;
+    box-shadow: 4px 4px 4px blue;
+    display: block;
+}
+#textdiv{
+    width: 25%;
+    padding: 20px;
+    box-shadow: 4px 4px 4px blue;
+     display: block;
+
+
+}
+
+p{
+    text-align: center;
+}
+legend{
+    text-align: center;
+
+}
+#lets{  font-size: larger;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color: white;
 
 
 
 
+}
+.First{
 
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.box{
+    padding: 20px;
+    height: 4px;
+
+}
+button{
+    height: 40px;
+    width: 80px;
+    border-radius: 50px;
+    color: white;
+    background-color: deepskyblue;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+
+}
 
 
   </style>
@@ -35,10 +92,11 @@
 
 </head>
 <body>
+
 <div id="Maindiv">
-  <div style="background-color: cornflowerblue" class="Divisions">
-    <h1 style="font-size: large">Let's Chat</h1>
-    <p class="First">Whether tou have a question,want to start a project or simply want to connect.</p>br*2
+  <div style="background-color: cornflowerblue" class="Divisions" id="textdiv">
+    <h1 id="lets">Let's Chat</h1>
+    <p class="First">Whether tou have a question,want to start a project or simply want to connect.</p><br><br>
     <p class="First">Feel free to send a amessage in the contact form</p>
 
 
@@ -48,8 +106,21 @@
 
   </div>
 
-  <div class="Divisions">
+  <div class="Divisions" id="formdiv">
     <form action="">
+
+        <legend style="font-weight: bolder"; >Contact</legend>
+        <br>
+        <p style="text-align: left">*Required</p>
+        <input type="text" id="Fname" placeholder=" Name*" required="required" class="box"><br><br>
+        <input type="email" id="Eaddress" placeholder=" Email*" required="required" class="box"><br><br>
+        <input type="text" id="com" placeholder=" Company" class="box"><br><br>
+        <input type="tel" id="ph" placeholder=" Phone" class="box"><br><br>
+         <textarea name="" id="message" cols="40" rows="5" placeholder=" Message"></textarea><br><br>
+        <button type="submit">Submit</button>
+
+
+
 
 
 
